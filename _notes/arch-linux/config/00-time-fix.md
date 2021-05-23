@@ -5,7 +5,7 @@ tags:
 sidebar:
     nav: "arch-config"
 redirect_from:
-  - /notes/arch-linux/config
+  - /notes/arch-linux/config/
 # prev-section:
 ---
 
