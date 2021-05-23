@@ -7,7 +7,7 @@ sidebar:
 redirect_from:
   - /notes/arch-linux/
   - /notes/arch-linux/install/
-# first-post: true
+first-post: true
 ---
 
 # BOOTABLE USB

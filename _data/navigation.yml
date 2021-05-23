@@ -23,6 +23,7 @@ arch-install:
   - title: "< notes"
     url: /notes/
   - title: "# Installation"
+
   - title: "Preparation"
     children:
     - title: "0. Bootable USB"
