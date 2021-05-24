@@ -31,6 +31,35 @@ arch-install:
     - title: "1. Pre-Install"
       url: /notes/arch-linux/install/01-pre-install
 
+  - title: "Disk Partition"
+    children:
+    - title: "2. Partition Table"
+      url: /notes/arch-linux/install/02-partition-table
+    - title: "3. LVM - [ optional ]"
+      url: /notes/arch-linux/install/03-lvm
+    - title: "4. LUKS - [ optional ]"
+      url: /notes/arch-linux/install/04-luks
+    - title: "5. SWAP - [ optional ]"
+      url: /notes/arch-linux/install/05-swap
+
+  - title: "Base Install"
+    children:
+    - title: "6. Arch Base"
+      url: /notes/arch-linux/install/06-base-install
+    - title: "7. Configuration"
+      url: /notes/arch-linux/install/07-base-config
+    - title: "8. Drivers"
+      url: /notes/arch-linux/install/08-drivers
+    - title: "9. Bootloader"
+      url: /notes/arch-linux/install/09-bootloader
+
+  - title: "Basics"
+    children:
+    - title: "10. Desktop Environment"
+      url: /notes/arch-linux/install/10-desktop-env
+    - title: "11. Basic Applications"
+      url: /notes/arch-linux/install/11-basic-apps
+
   - title: "# Configuration [ + ]"
     url: /notes/arch-linux/config
 
@@ -48,4 +77,3 @@ arch-config:
         url: /notes/arch-linux/config/00-time-fix
       - title: "NTFS Mount"
         url: /notes/arch-linux/config/01-ntfs-mount
-
