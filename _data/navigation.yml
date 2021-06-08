@@ -106,7 +106,7 @@ arch-config:
       - title: "Backup"
         url: /notes/arch-linux/config/09-backup/
 
-  - title: "Arch on Surface Pro 3"
+  - title: "Arch on MS Surface"
     children:
       - title: "Arch Patches"
         url: /notes/arch-linux/surface-pro-3/arch-sp3/
