@@ -4,7 +4,6 @@ tags:
   - arch linux
 sidebar:
     nav: "arch-install"
-next-section: /notes/arch-linux/config/00-time-fix
 ---
 
 # BASIC APPLICATIONS
@@ -26,6 +25,8 @@ $   pacman -S networkmanager network-manager-applet
 $   systemctl enable NetworkManager
 ```
 
+* Note: To have network manager start before login, run `nm-connection-editor` and edit connection to enable `All users may connect to this network`.
+
 > ## >> Bluetooth
 
 Install Bluetooth protocol stack and its tray applet, load driver to kernel module then enable autostart:
@@ -34,15 +35,6 @@ Install Bluetooth protocol stack and its tray applet, load driver to kernel modu
 $   pacman -S bluez bluez-utils blueman
 $   modprobe btusb
 $   systemctl enable bluetooth
-```
-
-> ## >> Reflector
-
-Automatically update mirror list at boot:
-
-```sh
-$   pacman -S reflector
-$   systemctl enable reflector
 ```
 
 > ## >> SSH
@@ -60,16 +52,6 @@ Catalogs for software configurations (dotfiles):
 
 ```sh
 $   pacman -S xdg-utils xdg-user-dirs
-```
-
-> ## >> AUR
-
-Arch User Repository - best thing about Arch:
-
-```sh
-$   git clone https://aur.archlinux.org/yay.git
-$   cd yay
-$   makepkg -si
 ```
 
 ## !! THE FINAL STEP !!

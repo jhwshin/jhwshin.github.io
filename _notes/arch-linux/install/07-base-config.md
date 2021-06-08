@@ -118,9 +118,10 @@ Also I usually like to enable these misc options:
 # Misc options
 UseSyslog
 Color
-TotalDownload
+#NoProgressBar
 CheckSpace
 VerbosePkgLists
+ParallelDownloads = 5
 ```
 
 Refresh new mirrors:

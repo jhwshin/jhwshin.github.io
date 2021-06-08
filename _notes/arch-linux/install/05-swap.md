@@ -16,7 +16,7 @@ Swap files are more flexible as they are resizable, however swap partitions are 
 
 > ## >> File
 
-> Swapfile should be done AFTER installation.
+> I prefer settings up swapfile AFTER installation.
 
 "Zero-Fill" format swap file - Important that swap file has 'no holes':
 

@@ -23,7 +23,7 @@ $   pacman -S i3 i3status dmenu
 Install XFCE and extra plugins/apps.
 
 ```sh
-$   pacman -S xfce4 xfce-goodies
+$   pacman -S xfce4 xfce4-goodies
 ```
 
 > ### >> GNOME
@@ -81,46 +81,10 @@ $   startx
 
 Otherwise if you are a sane person use a proper DM:
 
-> ### >> LightDM
+> ### >> GDM
 
-For some reason it is best to follow this method to prevent weird bugs:
-
-First install `gdm` and enable then reboot:
+Install `gdm` and enable:
 ```sh
 $   pacman -S gdm
 $   systemctl enable gdm
-```
-
-However I prefer to use `lightdm`, since it is easier to run start-up custom scripts at login.
-
-Boot into a DE and install `lightdm` after `gdm` and `lightdm-webkit2-greeter`
-```sh
-$   pacman -S lightdm
-$   yay -S lightdm-webkit2-greeter
-$   systemctl disable gdm
-$   systemctl enable lightdm
-```
-
-Change config to run webkit2-greeter and allow graphics to load by logind:
-
-`/etc/lightdm.conf`
-```ini
-...
-greeter-session=lightdm-webkit2-greeter
-...
-logind-check-graphical=true
-...
-```
-
-Reboot into system, however for some reason default webkit2 theme has extremely high CPU usage, so I prefer to use a different theme:
-```sh
-$   yay -S lightdm-webkit-theme-litarvan
-```
-
-then finally change theme:
-
-`/etc/lightdm/lightdm-webkit2-greeter.conf`
-```ini
-...
-webkit_theme        = litarvan
 ```

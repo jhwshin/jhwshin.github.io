@@ -55,9 +55,9 @@ $   pacman-key --refresh-keys
 
 ## 2. Install Arch Base
 
-Install base, developer packages, version control (for installing AUR) and the very best text editor:
+Install base, developer packages, linux-longterm (for a stable version), version control (for installing AUR) and the very best text editor with highlighting:
 ```sh
-$   pacstrap /mnt base base-devel linux linux-firmware git nano
+$   pacstrap /mnt base base-devel linux linux-firmware linux-lts linux-headers linux-headers-lts linux-api-headers git nano nano-syntax-highlighting
 ```
 
 ## 3. Generate fstab

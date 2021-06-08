@@ -18,7 +18,7 @@ notes:
     - title: "Arch Linux"
       url: /notes/arch-linux/
 
-# _notes/arch-linux/install
+# _notes/arch-linux/install/
 arch-install:
   - title: "< notes"
     url: /notes/
@@ -27,53 +27,119 @@ arch-install:
   - title: "Preparation"
     children:
     - title: "0. Bootable USB"
-      url: /notes/arch-linux/install/00-bootable-usb
+      url: /notes/arch-linux/install/00-bootable-usb/
     - title: "1. Pre-Install"
-      url: /notes/arch-linux/install/01-pre-install
+      url: /notes/arch-linux/install/01-pre-install/
 
   - title: "Disk Partition"
     children:
     - title: "2. Partition Table"
-      url: /notes/arch-linux/install/02-partition-table
+      url: /notes/arch-linux/install/02-partition-table/
     - title: "3. LVM - [ optional ]"
-      url: /notes/arch-linux/install/03-lvm
+      url: /notes/arch-linux/install/03-lvm/
     - title: "4. LUKS - [ optional ]"
-      url: /notes/arch-linux/install/04-luks
+      url: /notes/arch-linux/install/04-luks/
     - title: "5. SWAP - [ optional ]"
-      url: /notes/arch-linux/install/05-swap
+      url: /notes/arch-linux/install/05-swap/
 
   - title: "Base Install"
     children:
     - title: "6. Arch Base"
-      url: /notes/arch-linux/install/06-base-install
+      url: /notes/arch-linux/install/06-base-install/
     - title: "7. Configuration"
-      url: /notes/arch-linux/install/07-base-config
+      url: /notes/arch-linux/install/07-base-config/
     - title: "8. Drivers"
-      url: /notes/arch-linux/install/08-drivers
+      url: /notes/arch-linux/install/08-drivers/
     - title: "9. Bootloader"
-      url: /notes/arch-linux/install/09-bootloader
+      url: /notes/arch-linux/install/09-bootloader/
 
   - title: "Basics"
     children:
     - title: "10. Desktop Environment"
-      url: /notes/arch-linux/install/10-desktop-env
+      url: /notes/arch-linux/install/10-desktop-env/
     - title: "11. Basic Applications"
-      url: /notes/arch-linux/install/11-basic-apps
+      url: /notes/arch-linux/install/11-basic-apps/
+    - title: "12. Post Install"
+      url: /notes/arch-linux/install/12-post-install/
 
   - title: "# Configuration [ + ]"
-    url: /notes/arch-linux/config
+    url: /notes/arch-linux/config/
 
-# _notes/arch-linux/config
+  - title: "# Applications [ + ]"
+    url: /notes/arch-linux/apps/
+
+
+# _notes/arch-linux/config/
 arch-config:
   - title: "< notes"
     url: /notes/
   - title: "# Installation [ + ]"
-    url: /notes/arch-linux/install
+    url: /notes/arch-linux/install/
   - title: "# Configuration"
 
   - title: "Dual Boot"
     children:
       - title: "Time Fix"
-        url: /notes/arch-linux/config/00-time-fix
+        url: /notes/arch-linux/config/00-time-fix/
       - title: "NTFS Mount"
-        url: /notes/arch-linux/config/01-ntfs-mount
+        url: /notes/arch-linux/config/01-ntfs-mount/
+      - title: "Change Boot Order"
+        url: /notes/arch-linux/config/02-change-boot-order/
+
+  - title: "Power Settings"
+    children:
+      - title: "Hibernation"
+        url: /notes/arch-linux/config/03-hibernation/
+      - title: "Power Manager"
+        url: /notes/arch-linux/config/04-power-manager/
+      - title: "Power Saving"
+        url: /notes/arch-linux/config/05-power-saving/
+      - title: "Power Switch"
+        url: /notes/arch-linux/config/06-power-switch/
+
+  - title: "Troubleshoot"
+    children:
+      - title: "Logs"
+        url: /notes/arch-linux/config/07-logs/
+      - title: "Packages"
+        url: /notes/arch-linux/config/08-packages/
+      - title: "Backup"
+        url: /notes/arch-linux/config/09-backup/
+
+  - title: "Arch on Surface Pro 3"
+    children:
+      - title: "Arch Patches"
+        url: /notes/arch-linux/surface-pro-3/arch-sp3/
+      - title: "Windows Patches"
+        url: /notes/arch-linux/surface-pro-3/windows-sp3/
+
+  - title: "# Applications [ + ]"
+    url: /notes/arch-linux/apps/
+
+
+# _notes/arch-linux/apps/
+arch-apps:
+  - title: "< notes"
+    url: /notes/
+  - title: "# Installation [ + ]"
+    url: /notes/arch-linux/install/
+
+  - title: "# Configuration [ + ]"
+    url: /notes/arch-linux/config/
+
+  - title: "# Applications"
+    children:
+      - title: "Firefox"
+        url: /notes/arch-linux/apps/firefox/
+      - title: "Macchanger"
+        url: /notes/arch-linux/apps/macchanger/
+      - title: "NoMachine"
+        url: /notes/arch-linux/apps/nomachine/
+      - title: "Samba"
+        url: /notes/arch-linux/apps/samba/
+      - title: "Syncthing"
+        url: /notes/arch-linux/apps/syncthing/
+      - title: "Synergy"
+        url: /notes/arch-linux/apps/synergy/
+      - title: "Virtualbox"
+        url: /notes/arch-linux/apps/virtualbox/
